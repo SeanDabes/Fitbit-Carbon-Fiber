@@ -1,0 +1,38 @@
+{
+  "name": "carbon-fiber",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "143e943e-471f-4450-8ef3-8df18b262a08",
+    "appType": "clockface",
+    "appDisplayName": "Carbon Fiber",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_user_profile",
+	  "access_location",
+	  "run_background"
+    ],
+    "buildTargets": [
+      "atlas"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {
+    "@chris-lewis/fitbit-utils": "^1.2.2",
+    "fitbit-weather": "^0.2.3",
+    "fitfont": "^1.3.3"
+  }
+}

@@ -309,7 +309,7 @@ function update_elevation(evt) {
   if (today.adjusted.elevationGain >= goals.elevationGain) {
     ElevationProgress.width = 107;
   } else {
-    Elevation.width = Math.floor((107*today.adjusted.elevationGain)/goals.elevationGain);
+    ElevationProgress.width = Math.floor((107*today.adjusted.elevationGain)/goals.elevationGain);
   }
 }
 
